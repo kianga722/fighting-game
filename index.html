@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>2D FIGHTING GAME</title>
+    </head>
+
+    <body>
+        <section id="mainWrapper">
+            <section id="healthTimerInterface">
+                <!-- player 1 health -->
+                <article class="healthWrapper healthWrapperPlayer1">
+                    <div class="healthBackground"></div>
+                    <div id="player1Health" class="healthForeground"></div>
+                </article>
+
+                <!-- timer -->
+                <article id="timer">10</article>
+
+                <!-- player 2 health -->
+                <article class="healthWrapper healthWrapperPlayer2">
+                    <div class="healthBackground"></div>
+                    <div id="player2Health" class="healthForeground"></div>
+                </article>
+            </section>
+    
+            <article id="displayText">Tie</article>
+    
+            <article id="restartModal">Press R to Restart</article>
+    
+            <canvas></canvas>
+        </section>
+        
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="js/utils.js"></script>  
+        <script src="js/classes.js"></script>  
+        <script src="index.js"></script>  
+    </body>
+</html>
